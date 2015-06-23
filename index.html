@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>4 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/4-col-portfolio.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+<section id="header">
+
+            <nav class="navbar navbar-inverse" role="navigation"><!-- add "white" class for white nav bar -->
+                <div class="container">
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenu" class="fa fa-bars" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a href="#home" class="scrollTo navbar-brand" title="Amunra One Page Template">
+                            <img alt="Bootstrap Templates &amp; Themes" src="img/makhovetska4.png"> 
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div id="navbar-collapse" class="collapse navbar-collapse">
+
+                        <ul class="nav navbar-nav navbar-right"><!-- remove scrollTo class for external/real link -->
+                             <li data-option-value="*" class="active" ng-click="by_category = ''" ng-class="{active:by_category===''}"><a href="#">Show All</a></li>
+                            <li data-option-value=".logo" ng-click="by_category = 'logo'" ng-class="{active:by_category==='logo'}"><a href="#">Logo</a></li>
+                            <li data-option-value=".Illustration" ng-click="by_category = 'Illustration'" ng-class="{active:by_category==='Illustration'}"><a href="#">Image</a></li>
+                            <li data-option-value=".T-shirt" ng-click="by_category = 'T-shirt'" ng-class="{active:by_category==='T-shirt'}"><a href="#">T-shirt</a></li>
+                            <li data-option-value=".Banner/Ad" ng-click="by_category = 'Banner/Ad'" ng-class="{active:by_category==='Banner/Ad'}"><a href="#">Banner</a></li>
+                            <li data-option-value=".Web Page" ng-click="by_category = 'Web Page'" ng-class="{active:by_category==='Web Page'}"><a href="#">Web</a></li>
+                            <li data-option-value=".Photo Retouch/Editing" ng-click="by_category = 'Photo Retouch/Editing'" ng-class="{active:by_category==='Photo Retouch/Editing'}"><a href="#">Photo Editing</a></li>
+                            <li data-option-value=".Book/Booklet" ng-click="by_category = 'Book/Booklet'" ng-class="{active:by_category==='Book/Booklet'}"><a href="#">Book/Booklet</a></li>
+                            <li data-option-value=".Label/Package Design" ng-click="by_category = 'Label/Package Design'" ng-class="{active:by_category==='Label/Package Design'}"><a href="#">Label</a></li>
+                            <li data-option-value=".Watercolors" ng-click="by_category = 'Watercolors'" ng-class="{active:by_category==='Watercolors'}"><a href="#">Watercolor</a></li>
+                                                    </ul>
+
+                    </div><!-- /.navbar-collapse -->
+
+                </div>
+            </nav>
+
+        </section>
+
+	 
+             <!-- Page Heading -->
+      <div class="row introduction">
+            <div class="col-lg-2">
+                <img src="img/Makhovetska4.jpg"   class="img-circle">
+             </div>
+             <div class="col-lg-10">
+                <h1 class="hello"> Hello and Welcome to my Portfolio</h1>
+                <h2 class="about">I love to design Graphics and Layouts! I will be glad to create more of images for you :)</h2>
+                <h3>e-mail: jeky.mah@gmail.com</h3>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+    <div id="portfolio" class="container2">
+            <ul class="nav nav-pills isotope-filter isotope-filter" data-sort-id="isotope-list" data-option-key="filter" ng-init="by_category=''">
+                <li data-option-value="*" class="active" ng-click="by_category = ''" ng-class="{active:by_category===''}"></li>
+                <li data-option-value=".logo" ng-click="by_category = 'logo'" ng-class="{active:by_category==='logo'}"></li>
+                <li data-option-value=".Illustration" ng-click="by_category = 'Illustration'" ng-class="{active:by_category==='Illustration'}"></li>
+                <li data-option-value=".T-shirt" ng-click="by_category = 'T-shirt'" ng-class="{active:by_category==='T-shirt'}"></li>
+                <li data-option-value=".Banner/Ad" ng-click="by_category = 'Banner/Ad'" ng-class="{active:by_category==='Banner/Ad'}"></li>
+                <li data-option-value=".Web Page" ng-click="by_category = 'Web Page'" ng-class="{active:by_category==='Web Page'}"></li>
+                <li data-option-value=".Photo Retouch/Editing" ng-click="by_category = 'Photo Retouch/Editing'" ng-class="{active:by_category==='Photo Retouch/Editing'}"></li>
+                <li data-option-value=".Book Cover/Layout" ng-click="by_category = 'Book Cover/Layout'" ng-class="{active:by_category==='Book Cover/Layout'}"></li>
+                <li data-option-value=".Label/Package Design" ng-click="by_category = 'Label/Package Design'" ng-class="{active:by_category==='Label/Package Design'}"></li>
+                <li data-option-value=".Watercolors" ng-click="by_category = 'Watercolors'" ng-class="{active:by_category==='Watercolors'}"></li>
+                <li data-option-value=".Booklet/Flyer" ng-click="by_category = 'Booklet/Flyer'" ng-class="{active:by_category==='Booklet/Flyer'}"></li>
+            </ul>
+            <hr class="menu-lines"><!-- lines -->
+            
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row portfolio-items" ng-controller="WorksListCtrl">
+            <div ng-show="modalInstance" class="blur"></div>
+            <ul class="sort-destination isotope fadeIn" data-sort-id="isotope-list" style="position: relative; overflow: visible;">
+                <li class="isotope-item col-sm-6 col-md-3 development" style="transform: translate3d(0px, 0px, 0px);" ng-repeat="work in works | filter:{category: by_category}"><!-- item -->
+                    <div class="item-box">
+                        <figure>
+                            <a href="" ng-click="open(work)">
+                                <img class="img-responsive" src="{{work.src}}" alt="{{work.name}}">
+                            </a>
+                        </figure>
+                        <div class="item-box-desc">
+                            <h4>{{work.name}}</h4>
+                            <small class="styleColor">{{work.descript}}</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <hr>
+                <div class="col-lg-12">
+                    <p>Copyright &copy; JekyMa 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+    <!-- App Angular -->
+    <script src="/js/app.js"></script>
+    <script src="/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
