@@ -247,9 +247,9 @@ audio, canvas, img, video {
 p, ol li, ul li {
   color: #7e8998;
 }
-#header .navbar-inverse .navbar-nav>li:first-child>a {
+/*#header .navbar-inverse .navbar-nav>li:first-child>a {
   padding-left: 0;
-}
+}*/
 #header .navbar-inverse .navbar-nav>li>a {
   color: #000;
   text-transform: uppercase;
